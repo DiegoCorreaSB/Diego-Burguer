@@ -52,6 +52,12 @@ nav {
     color: white;
   }
 
+  a:hover {
+    cursor: pointer;
+    border-bottom: var(--color--btn) 1px solid;
+    color: var(--color--btn);
+  }
+
 
   #btn-peca-agora a {
     display: inline-block;
@@ -247,8 +253,6 @@ nav {
     }
   }
 
-
-
 }
 
 .preco {
@@ -257,7 +261,7 @@ nav {
   align-items: center;
 
   height: 80px;
-  width: 100%;
+  width: 250px;
 
   background-color: var(--color--btn);
   color: black;
@@ -315,13 +319,81 @@ nav {
       width: 450px;
       height: fit-content;
       padding: 20px;
+      gap: 30px;
 
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
 
+      h3 {
+        margin-bottom: 20px;
+        font-size: 1.5em;
+      }
+
+      .descricao-bebida {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
       
+    }
+  }
+
+}
+
+#container-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: var(--color--cards);
+  height: 250px;
+  width: 100%;
+  margin-top: 100px;
+  padding: 20px 0px;
+
+  #logo-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #infos-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+
+  }
+
+  .dados-footer {
+    h3 {
+      color: var(--color--btn);
+    }
+  }
+
+  #redes-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    a {
+      text-decoration: none;
+      color: var(--color--btn);
+    }
+
+    a:hover {
+      text-decoration: underline;
+      cursor: pointer;
     }
   }
 

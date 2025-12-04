@@ -10,6 +10,8 @@ import cocapet from '../public/bebidas/coca-doislitros.jpg'
 import antarticalata from '../public/bebidas/antartica-lata.jpg'
 import antarticapet from '../public/bebidas/antartica-doislitros.jpg'
 import spritelata from '../public/bebidas/sprite-lata.jpg'
+import guaravita from '../public/bebidas/guaravita.png'
+import guaraviton from '../public/bebidas/guaraviton.jpg'
 
 
 import './App.css'
@@ -27,8 +29,8 @@ function App() {
 
           <section id="opcoes">
             <a href="#">Início</a>
-            <a href="#">Hambúrgueres</a>
-            <a href="#">Bebidas</a>
+            <a href="#lista-hamburguer">Hambúrgueres</a>
+            <a href="#lista-bebida">Bebidas</a>
             <a href="#">Contato</a>
           </section>
 
@@ -132,7 +134,17 @@ function App() {
               <div className='descricao-bebida'>
                 <h3>Coca Cola 2 Litros</h3>
                 <section className="preco">
-                  <a href="#">R$ 18,50</a>
+                  <a href="#">R$ 16,00</a>
+                </section>
+              </div>
+            </div>
+
+            <div className="card-bebida">
+              <div><img src={antarticapet} alt="Guaraná Antartica 2 Litros" /></div>
+              <div className='descricao-bebida'>
+                <h3>Guaraná Antartica 2 Litros</h3>
+                <section className="preco">
+                  <a href="#">R$ 11,00</a>
                 </section>
               </div>
             </div>
@@ -142,17 +154,7 @@ function App() {
               <div className='descricao-bebida'>
                 <h3>Coca Cola Lata 350ml</h3>
                 <section className="preco">
-                  <a href="#">R$ 18,50</a>
-                </section>
-              </div>
-            </div>
-
-            <div className="card-bebida">
-              <div><img src={antarticapet} alt="Guaraná Antartica 2 Litros" /></div>
-              <div className='descricao-bebida'>
-                <h3>Guaraná Antartica 2 Litrosl</h3>
-                <section className="preco">
-                  <a href="#">R$ 18,50</a>
+                  <a href="#">R$ 7,00</a>
                 </section>
               </div>
             </div>
@@ -162,7 +164,7 @@ function App() {
               <div className='descricao-bebida'>
                 <h3>Guaraná Antartica Lata 350ml</h3>
                 <section className="preco">
-                  <a href="#">R$ 18,50</a>
+                  <a href="#">R$ 7,00</a>
                 </section>
               </div>
             </div>
@@ -172,7 +174,27 @@ function App() {
               <div className='descricao-bebida'>
                 <h3>Sprite Lata 350ml</h3>
                 <section className="preco">
-                  <a href="#">R$ 18,50</a>
+                  <a href="#">R$ 7,00</a>
+                </section>
+              </div>
+            </div>
+
+            <div className="card-bebida">
+              <div><img src={guaraviton} alt="Guaraviton 500ml" /></div>
+              <div className='descricao-bebida'>
+                <h3>Guaraviton</h3>
+                <section className="preco">
+                  <a href="#">R$ 6,00</a>
+                </section>
+              </div>
+            </div>
+
+            <div className="card-bebida">
+              <div><img src={guaravita} alt="Guaravita 350ml" /></div>
+              <div className='descricao-bebida'>
+                <h3>Guaravita 350ml</h3>
+                <section className="preco">
+                  <a href="#">R$ 3,00</a>
                 </section>
               </div>
             </div>
@@ -182,7 +204,7 @@ function App() {
               <div className='descricao-bebida'>
                 <h3>Água sem gás</h3>
                 <section className="preco">
-                  <a href="#">R$ 18,50</a>
+                  <a href="#">R$ 2,50</a>
                 </section>
               </div>
             </div>
@@ -192,13 +214,38 @@ function App() {
               <div className='descricao-bebida'>
                 <h3>Água com gás</h3>
                 <section className="preco">
-                  <a href="#">R$ 18,50</a>
+                  <a href="#">R$ 4,50</a>
                 </section>
               </div>
             </div>
 
           </section>
         </article>
+
+        <footer id='container-footer'>
+
+          <div id="logo-footer">
+            <h2>🍔Seu nome aqui</h2>
+            <p>© 2024 Seu nome aqui. Todos os direitos reservados.</p>
+          </div>
+
+          <div id="infos-footer">
+            <section className='dados-footer'>
+              <h3>Contato 📱</h3>
+              <p>21 99900-1122</p>
+            </section>
+
+            <section className='dados-footer'>
+              <h3>Localização 📍</h3>
+              <p>Rua dos Hambúrgueres, 123 - Cidade dos Sabores</p>
+            </section>
+
+            <section id='redes-footer'>
+              <a href="#">Nosso Instagram</a>
+              <a href="#">Nossa WhatsApp</a>
+            </section>
+          </div>
+        </footer>
 
       </main>
     </>
