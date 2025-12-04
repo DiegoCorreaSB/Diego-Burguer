@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: #ffffff;
-  background-color: #ffffff;
+  background-color: #606060;
 
   --color--btn: #F97316;
   --color--btn-hover: #EA580C;
@@ -338,7 +338,7 @@ nav {
         justify-content: center;
         text-align: center;
       }
-      
+
     }
   }
 

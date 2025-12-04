@@ -13,7 +13,7 @@ import spritelata from '../public/bebidas/sprite-lata.jpg'
 import guaravita from '../public/bebidas/guaravita.png'
 import guaraviton from '../public/bebidas/guaraviton.jpg'
 
-
+import '../src/style/mediaquiries.css';
 import './App.css'
 import './index.css'
 
@@ -47,7 +47,7 @@ function App() {
             </div>
 
             <section id="btn-cardapio">
-              <a href="#">Veja nosso cardápio</a>
+              <a href="#lista-hamburguer">Veja nosso cardápio</a>
             </section>
 
             <section id='informacoes'>
@@ -56,12 +56,12 @@ function App() {
                 <p>Vendas</p>
               </div>
               <div className='btn-infos'>
-                <h3>40 - 60 min</h3>
+                <h3 >40 - 60 min</h3>
                 <p>Tempo de Entrega</p>
               </div>
               <div className='btn-infos'>
                 <h3>4.89 ⭐</h3>
-                <p>em Avaliações</p>
+                <p>Avaliações</p>
               </div>
             </section>
 
@@ -242,7 +242,7 @@ function App() {
 
             <section id='redes-footer'>
               <a href="#">Nosso Instagram</a>
-              <a href="#">Nossa WhatsApp</a>
+              <a href="#">Nosso WhatsApp</a>
             </section>
           </div>
         </footer>
